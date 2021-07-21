@@ -15,10 +15,11 @@
       crossorigin="anonymous"
     />
 
-    <title>Decoder Ring - Home Page</title>
+    <title>Decoder Ring</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
 
-  <body>
+  <body class="">
     <header class="container-fluid bg-light border-bottom text-light bg-dark">
       <nav class="row align-items-center">
         <h1 class="h4 p-3">
@@ -34,10 +35,10 @@
       <section class="row">
         <div class="col">
           <div class="card">
-            <div class="card-header bg-info text-white">
+            <div class="card-header bg-dark text-primary">
               <h2 class="my-2">Caesar Shift</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body bg-dark text-white">
               <p>
                 The Caesar Shift is a type of substitution cipher originally
                 used by Julius Caesar to protect messages of military
@@ -77,14 +78,14 @@
                 <div class="form-group">
                   <label for="caesar-input">Your message</label>
                   <textarea
-                    class="form-control"
+                    class="form-control bg-secondary text-white"
                     id="caesar-input"
                     rows="3"
                   ></textarea>
                 </div>
                 <div class="form-group">
                   <label for="caesar-shift">Shift number</label>
-                  <input type="number" class="form-control" id="caesar-shift" />
+                  <input type="number" class="form-control bg-secondary text-white" id="caesar-shift" />
                 </div>
                 <button class="btn btn-primary" type="submit">Submit</button>
               </form>
@@ -97,7 +98,7 @@
               Something went wrong! Check your input and the shift amount and
               try again.
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-primary text-light">
               Output:
               <span class="font-weight-bold" id="caesar-output"
                 >No message as of yet...</span
@@ -111,10 +112,10 @@
       <section class="row mt-4">
         <div class="col">
           <div class="card">
-            <div class="card-header bg-warning">
+            <div class="card-header bg-dark text-warning">
               <h2 class="my-2">Polybius Square</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body bg-dark text-white">
               <p>
                 The Polybius Square is a cipher that is achieved by arranging a
                 typical alphabet into a grid. Each letter is represented through
@@ -157,12 +158,12 @@
                 <div class="form-group">
                   <label for="polybius-input">Your message</label>
                   <textarea
-                    class="form-control"
+                    class="form-control bg-secondary text-white"
                     id="polybius-input"
                     rows="3"
                   ></textarea>
                 </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-warning text-dark" type="submit">Submit</button>
               </form>
             </div>
             <div
@@ -172,7 +173,7 @@
             >
               Something went wrong! Check your input and try again.
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-warning text-dark">
               Output:
               <span class="font-weight-bold" id="polybius-output"
                 >No message as of yet...</span
@@ -186,10 +187,10 @@
       <section class="row mt-4">
         <div class="col">
           <div class="card">
-            <div class="card-header bg-success text-white">
+            <div class="card-header bg-dark text-success">
               <h2 class="my-2">Substitution Cipher</h2>
             </div>
-            <div class="card-body">
+            <div class="card-body bg-dark text-white">
               <p>
                 The Substitution Cipher requires a standard alphabet and a
                 substitution alphabet. Letters from the standard alphabet will
@@ -233,7 +234,7 @@
                 <div class="form-group">
                   <label for="substitution-input">Your message</label>
                   <textarea
-                    class="form-control"
+                    class="form-control bg-secondary text-white"
                     id="substitution-input"
                     rows="3"
                   ></textarea>
@@ -242,12 +243,12 @@
                   <label for="substitution-alphabet">Alphabet key</label>
                   <input
                     type="text"
-                    class="form-control"
+                    class="form-control bg-secondary text-white"
                     id="substitution-alphabet"
                     maxlength="26"
                   />
                 </div>
-                <button class="btn btn-primary" type="submit">Submit</button>
+                <button class="btn btn-success text-light" type="submit">Submit</button>
               </form>
             </div>
             <div
@@ -257,7 +258,7 @@
             >
               Something went wrong! Check your input and alphabet key.
             </div>
-            <div class="card-footer">
+            <div class="card-footer bg-success text-light">
               Output:
               <span class="font-weight-bold" id="substitution-output"
                 >No message as of yet...</span
